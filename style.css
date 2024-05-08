@@ -1,0 +1,168 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: poppins;
+}
+.header-cnt{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1rem;
+}
+.nav{
+    display: flex;
+    align-items: center;
+    color: #223344;
+}
+.nav li a{
+    padding: 0 2rem;
+    color: inherit;
+    font-size: 0.875rem;
+    text-decoration: none;
+}
+.nav li{
+    list-style: none;
+}
+.header-cnt .logo {
+    margin-left: 2rem;
+}
+.header-cnt .logo-drk {
+    display: none;
+    margin-left: 2rem;
+}
+.header-cnt .toggle-btn {
+    margin-right: 2rem;
+    height: 1rem;
+    display: flex;
+    align-items: center;
+    border-radius: 50%;
+}
+.header-cnt .toggle-btn .moon-btn{
+    border-radius: 30%;
+    background-color: #000;
+    height: inherit;
+}
+.header-cnt .toggle-btn .sun-btn{
+    border-radius: 50%;
+    height: inherit;
+    color: #fff;
+}
+.header-cnt .toggle-btn .moon-btn-blk{
+    border-radius: 50%;
+    background-color: #fff;
+    height: inherit;
+    display: none;
+}
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.main-one{
+    padding: 3rem 0 0 2rem;
+}
+.main-two img{
+    height: 100%;
+    width: 100%;
+}
+.small-heading{
+    font-size: 0.875rem;
+    padding-bottom: 1rem;
+    font-weight: bold;
+}
+.main-heading{
+    font-size: 3.75rem;
+    padding-bottom: 2rem;
+}
+.sub-heading{
+    font-size: 1.125rem;
+    color: #909193;
+    padding-bottom: 2rem;
+    width: 90%;
+}
+.button{
+    padding: 0.5rem 1rem;
+    border-radius: 8px ;
+    text-align: center;
+    color: #fff;
+    background-color: #2A4DD0;
+    display: inline;
+    font-size: 0.875rem;
+    font-weight: 500;
+    margin-right: 2rem;
+}
+.link{
+    display: inline;
+    font-size: 0.875rem;
+}
+.tick {
+    display:flex;
+    align-items: center;
+    padding: 2rem 0 ;
+}
+.tick-text{
+    margin-right: 1rem;
+    color: #909193;
+}
+.ham-menu{
+    display: flex;
+    flex-direction: row;
+}
+.ham-menu{
+    display: none;
+}
+.ham-nav{
+    position: absolute;
+    right: 2rem;
+    background-color: #fff;
+    width: 70%;
+    height: 100%;
+    text-align: center;
+    display: none;
+}
+.ham-nav li a{
+    color: inherit;
+    font-size: 2rem; 
+}
+.ham-nav li{
+    list-style: none;
+    margin: 2rem;
+}
+
+
+@media only screen and ( width < 1025px) {
+    main{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+}
+@media only screen and (width < 680px) {
+    .tick-text{
+        font-size: 0.7rem;
+    }
+    .main-heading{
+        font-size: 2.5rem;
+    }
+    .small-heading{
+        font-size: 0.7rem;
+    }
+    .sub-heading{
+        font-size: 1rem;
+    }
+    .nav{
+        display: none;
+    }
+    .header-cnt .toggle-btn{
+        display: none;
+    }
+    .ham-open{
+        display: inline;
+    }
+    .ham-menu{
+        display: inline;
+    }
+    .ham-close{
+        display: none;
+    }
+}
